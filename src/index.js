@@ -8,8 +8,10 @@ import NewAccount from './Components/NewAccount';
 import UpdateBalance from './Components/UpdateBalance';
 import AddToBalance from './Components/AddToBalance';
 import NotFound from './Components/NotFound';
-import ViewAll from './Components/ViewAll';
+import ViewAllAccs from './Components/ViewAll';
 import ViewOne from './Components/ViewOne';
+//remember to run npm start
+
 
 class Routing extends React.Component {
     render() {
@@ -38,7 +40,7 @@ class Routing extends React.Component {
                         <Route path="/accounts" exact component={ NewAccount } />
                         <Route path="/accounts/balance" exact component={ UpdateBalance } />
                         <Route path="/accounts/add" exact component={ AddToBalance } />
-                        <Route path="/viewall" exact component={ ViewAll } />
+                        <Route path="/viewall" exact component={ ViewAllAccs } />
                         <Route path="/viewall/:id" exact component={ ViewOne } />
                         <Route component={ NotFound } />
                     </Switch>
